@@ -1,5 +1,6 @@
 import { SideBarMenuCard } from "../types/types";
 import { classNames } from "../util/classes";
+import './SideBarMenuCardView.scss';
 
 interface SideBarMenuCardViewProps {
     card: SideBarMenuCard;

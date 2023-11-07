@@ -1,0 +1,35 @@
+@import './common.scss';
+
+.sideBarMenu {
+    background-color: #222;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    @include transition(width);
+
+    &.expanded {
+        width: 300px;
+    }
+
+    &collapsed {
+        width: 68px;
+    }
+
+    .menuBtn {
+        display: flex;
+        justify-content: flex-end;
+
+        .hamburgerBtn {
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            padding: 10px;
+            width: 68px;
+        }
+    }
+}
